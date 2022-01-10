@@ -5,7 +5,7 @@ class Player {
     this.positionX = 0;
     this.positionY = 0;
     this.rank = 0;
-this.fuel = 185;
+    this.fuel = 185;
     this.life = 185;
     this.score = 0;
 
@@ -28,7 +28,7 @@ this.fuel = 185;
       score: this.score,
     });
   }
-  //TA
+  //AM
   getDistance() {
     var playerDistanceRef = database.ref("players/player" + this.index);
     playerDistanceRef.on("value", data => {
@@ -53,7 +53,7 @@ this.fuel = 185;
     });
   }
 
-  //SA
+  //AA
   update() {
     var playerIndex = "players/player" + this.index;
     database.ref(playerIndex).update({
